@@ -1,0 +1,6 @@
+#!/bin/bash
+# 1-compiler script
+
+# C faylının adı daxil ediləcək dəyişən
+gcc -c $CFILE -o ${CFILE%.c}.o
+
