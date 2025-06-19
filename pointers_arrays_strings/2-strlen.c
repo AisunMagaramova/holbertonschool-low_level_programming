@@ -1,8 +1,8 @@
 /**
  * _strlen - simlin uzunluğunu tapır
- * @s: simlin götericisi
+ * @s: simlin göstəricisi
  *
- * Return: length of the string (number of characters before '\0')
+ * Return: simlin uzunluğunu qaytarır
  */
 int _strlen(char *s)
 {
