@@ -1,4 +1,4 @@
-#include "main.h"
+#include <unistd.h>
 
 /**
  * _puts - prints a string, followed by a new line, to stdout
@@ -6,10 +6,10 @@
  */
 void _puts(char *str)
 {
-	while (*str)
-	{
-		_putchar(*str);
-		str++;
-	}
-	_putchar('\n');
+    while (*str)
+    {
+        write(1, str, 1);  // 1 is the file descriptor for stdout
+        str++;
+    }
+    write(1, "\n", 1);  // Print newline
 }
