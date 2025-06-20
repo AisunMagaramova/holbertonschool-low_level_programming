@@ -1,15 +1,15 @@
-#include "main.h"
+#include <unistd.h>
 
 /**
- * _puts - soz cap etmek ucun
- * @str: cap olunan sozu teyin etmek ucun
+ * _puts - ekrana soz cixarir
+ * @str: unvanini deyir
  */
 void _puts(char *str)
 {
-	while (*str)
-	{
-		_putchar(*str);
-		str++;
-	}
-	_putchar('\n');
+    while (*str)
+    {
+        write(1, str, 1);
+        str++;
+    }
+    write(1, "\n", 1);
 }
