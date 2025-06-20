@@ -1,8 +1,8 @@
 #include <unistd.h>
 /**
- * _puts - ekrana soz cixarir
- * @str: unvanini deyir
- */
+* _puts - ekrana soz cixarir
+* @str: unvanini deyir
+*/
 void _puts(char *str)
 {
 	while (*str)
