@@ -8,8 +8,8 @@ void _puts(char *str)
 {
     while (*str)
     {
-        write(1, str, 1);  // 1 is the file descriptor for stdout
+        write(1, str, 1);
         str++;
     }
-    write(1, "\n", 1);  // Print newline
+    write(1, "\n", 1);
 }
