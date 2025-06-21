@@ -1,10 +1,10 @@
 #include <limits.h>
 
 /**
- * _atoi - Converts a string to an integer safely, avoiding overflow
- * @s: The string to convert
+ * _atoi - Converts a string to an integer.
+ * @s: The string to convert.
  *
- * Return: Converted integer or INT_MIN/INT_MAX on overflow
+ * Return: The converted integer.
  */
 int _atoi(char *s)
 {
@@ -16,18 +16,18 @@ int _atoi(char *s)
 		if (s[i] == '-')
 			sign *= -1;
 		else if (s[i] == '+')
-			; /* ignore + signs */
+			; /* ignore '+' */
 		else if (s[i] >= '0' && s[i] <= '9')
 		{
 			started = 1;
 
-			/* Check for overflow before multiplying and adding */
+			/* Overflow check */
 			if (sign == 1)
 			{
 				if (num > (INT_MAX - (s[i] - '0')) / 10)
 					return (INT_MAX);
 			}
-			else /* sign == -1 */
+			else
 			{
 				if (-num < (INT_MIN + (s[i] - '0')) / 10)
 					return (INT_MIN);
@@ -36,9 +36,7 @@ int _atoi(char *s)
 			num = num * 10 + (s[i] - '0');
 		}
 		else if (started)
-		{
 			break;
-		}
 		i++;
 	}
 
