@@ -11,24 +11,30 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-    unsigned int count = 0;
-    int i, j;
-    int found;
+	int count = 0;
+	int i, j;
+	int found;
 
-    for (i = 0; s[i] != '\0'; i++)
-    {
-        found = 0; /*tapilmayib hele*/
-        for (j = 0; accept[j] != '\0'; j++)
-        {
-            if (s[i] == accept[j])
-            {
-                found = 1; /*tapildi*/
-                break;
-            }
-        }
-        if (found == 0) /*s[i] accepde yoxdur*/
-            break;
-        count++;
-    }
-    return count;
+	/* Loop through each character of s */
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		found = 0; /* tapılmayıhele */
+
+		/* Check if current character s[i] is in accept */
+		for (j = 0; accept[j] != '\0'; j++)
+		{
+			if (s[i] == accept[j])
+			{
+				found = 1; /* Character found in accept */
+				break;
+			}
+		}
+
+		if (found == 0) /* If character not found, stop counting */
+			break;
+
+		count++; /* Increment count for each matching character */
+	}
+
+	return (count);
 }
