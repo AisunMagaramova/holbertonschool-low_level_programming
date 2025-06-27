@@ -6,7 +6,7 @@
  * @s: axtaris aparilacaq setir
  * @c: tapilacaq xarakter
  *
- * Return: 'c' xarakterinin ilk tapildigi yere isare eden painter, tapilmaz null
+ * Return: 'c' xarakter ilk tapildigi yere isare eden painter, tapilmaz null
  */
 char *_strchr(char *s, char c)
 {
