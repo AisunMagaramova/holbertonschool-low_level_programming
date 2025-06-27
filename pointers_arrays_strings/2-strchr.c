@@ -1,25 +1,26 @@
 #include "main.h"
-#include <stddef.h> /* Null ucun lazimdir*/
+#include <stddef.h>
+
 /**
  * _strchr - setrinde ilk 'c' xarakterinin yerini tapir
  * @s: axtaris aparilacaq setir
  * @c: tapilacaq xarakter
  *
- * Return: 'c' xaraktern ilk tapildigi yere isare eden painter, tapilmaz null
+ * Return: 'c' xarakterinin ilk tapildigi yere isare eden painter, tapilmaz null
  */
 char *_strchr(char *s, char c)
 {
 	int i = 0;
 
-	while (s[i] != '\0') /*setrin sonuns qeder get */
+	while (s[i] != '\0')
 	{
-		if (s[i] == c) /* eger 'c' tapildisa*/
-			return (&s[i]); /*hemin yere isare et*/
+		if (s[i] == c)
+			return (&s[i]);
 		i++;
 	}
 
-	if (c =='\0') /* eger axtarilan null terminatordursa*/
-		return (&s[i]); /* setrin sonundaki '\o'-a isare et*/
+	if (c == '\0')
+		return (&s[i]);
 
-	return (NULL); /*tapilmazsa null qaytar*/
+	return (NULL);
 }
