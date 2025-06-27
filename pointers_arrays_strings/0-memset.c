@@ -1,20 +1,21 @@
 #include "main.h"
 
 /**
- * _memset - Bir yaddaş sahəsini sabit bir bayt e  doldurur
- * @s: Baslangic yaddas unvani ünvan
- * @b: Doldurulacaq bayt (simvol)
- * @n: Nece bayt doldurulacaq
+ * _memset - fills memory with a constant byte
+ * @s: pointer to the memory area to fill
+ * @b: byte to fill the memory with
+ * @n: number of bytes to fill
+ *
+ * Return: pointer to the memory area s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-    unsigned int i; /* dövr ü� deyisen */
+	unsigned int i;
 
-    /* 0-dan n-e qeder gedirik sonra her bayti b ile  doldururuq */
-    for (i = 0; i < n; i++)
-    {
-        s[i] = b; /* i-ci baytı b simvolu ie doldurur */
-    }
+	for (i = 0; i < n; i++)
+	{
+		s[i] = b;
+	}
 
-    return s; /* yaddasin baslangic unvanini qaytarir */
+	return (s);
 }
