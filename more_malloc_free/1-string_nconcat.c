@@ -1,4 +1,11 @@
 #include <stdlib.h>
+
+/**
+ * _strlen - returns length of string
+ * @s: string pointer
+ *
+ * Return: length of string (number of chars before '\0')
+ */
 unsigned int _strlen(char *s)
 {
 	unsigned int len = 0;
