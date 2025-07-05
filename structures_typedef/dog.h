@@ -7,7 +7,7 @@
  * @age: itin yasi
  * @owner: itin sahibi (simvol pointeri)
  *
- * Tesviri: Bu struktur itinesaselumatlarını saxlamaq ü�düur- 
+ * Tesviri: Bu struktur itinesaselumatlarını saxlamaq ü�
  * adı, ysi ve  sahibinin adı daxil olmaqla.
  */
 struct dog
@@ -17,4 +17,4 @@ struct dog
 	char *owner;
 };
 
-#endif 
+#endif
