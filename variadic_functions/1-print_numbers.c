@@ -2,7 +2,7 @@
 #include <stdarg.h>
 
 /**
- * print_numbers - Prints numbers, separated by a string, followed by a new line.
+ * print_numbers - Prints numbers, separated by a string, followed by a new li
  * @separator: The string to be printed between numbers.
  * @n: The number of integers passed to the function.
  *
