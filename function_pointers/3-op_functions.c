@@ -1,5 +1,11 @@
 #include "3-calc.h"
-
+/**
+ * op_add - İkiededin cemini qaytarır
+ * @a: birinci eded
+ * @b: ikinci eded
+ *
+ * Return: cem (a + b)
+ */
 int op_add(int a, int b)
 {
 	return (a + b);
