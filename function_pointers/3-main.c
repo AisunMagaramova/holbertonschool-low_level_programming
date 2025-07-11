@@ -1,7 +1,13 @@
-#include <stdio.h>      /* printf */
-#include <stdlib.h>     /* atoi, exit */
+#include <stdio.h>
+#include <stdlib.h> 
 #include "3-calc.h"
-
+/**
+ * main - Entry point for calculator program
+ * @argc: Argument count
+ * @argv: Argument vector
+ *
+ * Return: 0 on success, exits with code on error
+ */
 int main(int argc, char *argv[])
 {
 	int a, b, result;
