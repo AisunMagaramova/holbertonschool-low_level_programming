@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "lists.h"
+
 /**
  * print_list - siyahidaki butun elementleri cap edir
  * @h-gosterilen siyahinin baslangici
@@ -8,6 +9,7 @@
 size_t print_list(const list_t *h)
 {
 	size_t count = 0;
+
 	while (h != NULL)
 	{
 		if (h->str == NULL)
@@ -17,5 +19,6 @@ size_t print_list(const list_t *h)
 		h = h->next;
 		count++;
 	}
+
 	return (count);
 }
