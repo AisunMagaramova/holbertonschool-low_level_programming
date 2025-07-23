@@ -3,7 +3,8 @@
 
 /**
  * print_list - siyahidaki butun elementleri cap edir
- * @h-gosterilen siyahinin baslangici
+ * @h: gosterilen siyahinin baslangici
+ *
  * Return: siyahidaki node-larin sayi
  */
 size_t print_list(const list_t *h)
