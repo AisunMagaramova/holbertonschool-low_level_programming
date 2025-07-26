@@ -2,9 +2,9 @@
 #include <string.h>
 #include "lists.h"
 /**
- * _strlen - sətrin uzunluğunu hesablayır
+ * _strlen - setirin uzunlgnu hesablay
  * @s: string pointer
- * Return: sətrin uzunluğu
+ * Return: setirin uzunlugu
  */
 unsigned int _strlen(const char *s)
 {
