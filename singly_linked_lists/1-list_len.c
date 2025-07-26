@@ -3,8 +3,7 @@
 /**
  * list_len: linked list de nece duyun oldugunu sayir
  * @head: siyahinin baslayigicina isare eden pointer
- *
- * return: siyahidaki nodelarin umumi sayi 
+ * return: siyahidaki nodelarin umumi sayi
  */
 size_t list_len(const list_t *head)
 {
