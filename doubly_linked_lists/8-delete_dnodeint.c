@@ -1,7 +1,7 @@
 #include  "lists.h"
 #include <stdlib.h>
 /**
- * delete_dnodeint_at_index - dlistint_t linked listde verilmis indexdeki nodeleri silir
+ * delete_dnodeint_at_index - dlistint_t linked liste node silir
  *  @head: linked list-in baslangicini gosteren pointer
  *  @index: silinecek node indexi
  *
