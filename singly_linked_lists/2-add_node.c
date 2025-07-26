@@ -12,8 +12,8 @@ unsigned int _strlen(const char *s)
 
 	while (s[len] != '\0')
 		len++;
-
-	 return (len);
+	
+	return (len);
 }
 /**
  * @add_node - siyahinin evveline yeni node elave edir
@@ -21,7 +21,7 @@ unsigned int _strlen(const char *s)
  * @str: elave edilecek setrin sureti
  *
  * Return: yeni node-un unvani, yaddas catmazsa NULL
- *  */
+ */
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new_node;
@@ -31,7 +31,7 @@ list_t *add_node(list_t **head, const char *str)
 
 	new_node = malloc(sizeof(list_t));
 	if (new_node == NULL)
-		return(NULL);
+		return (NULL);
 
 	new_node->str = strdup(str);
 	if (new_node->str == NULL)
@@ -40,7 +40,7 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	}
 
-	new_node->len =_strlen(str);
+	new_node->len = _strlen(str);
 	new_node->next = *head;
 	*head = new_node;
 
