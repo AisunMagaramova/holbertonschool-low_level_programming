@@ -4,7 +4,7 @@
  *  sum_dlistint - İsenilen indexdei  lerin cemi qaytari
  *  @head: siyahınıbasalngixa isare eden poi
  *
- *   Return: cem ve ya siyahısdursa 
+ *   Return: cem ve ya siyahısdurs 
  */
 int sum_dlistint(dlistint_t *head)
 {
