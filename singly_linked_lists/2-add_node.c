@@ -2,6 +2,20 @@
 #include <string.h>
 #include "lists.h"
 /**
+ * _strlen - sətrin uzunluğunu hesablayır
+ * @s: string pointer
+ * Return: sətrin uzunluğu
+ */
+unsigned int _strlen(const char *s)
+{
+	unsigned int len = 0;
+
+	while (s[len] != '\0')
+		len++;
+
+	 return (len);
+}
+/**
  * @add_node - siyahinin evveline yeni node elave edir
  * @head: siyahinin baslangicina isare eden pointerin unvani
  * @str: elave edilecek setrin sureti
