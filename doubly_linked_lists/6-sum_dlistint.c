@@ -1,25 +1,19 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- *  get_dnodeint_at_index - İsenilen indexdeki node qaytarir
- *  @head: siyahının slangivi
- *  @index: istenilen node nomresi
+ *  get_dnodeint_at_index - İsenilen indexdeki  lerin cemi qaytarir
+ *  @head: siyahınıbasalngixa isare eden pointer
  *
- *   Return: tapılan node-un pointeri e ya NULL
+ *   Return: cem ve ya siyahısdursa 0
  */
-dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
+int sum_dlistint(dlistint_t *head)
 {
-	unsigned int i = 0;
+	int sum = 0;
 
 	while (head != NULL)
 	{
-		if (i == index)
-			return (head);
-
+		sum += head->n;
 		head = head->next;
-		i++;
 	}
-
-	return (NULL);
+	return (sum);
 }
-
