@@ -2,6 +2,8 @@
 #include "lists.h"
 /**
  * list_len: linked list de nece duyun oldugunu sayir
+ * @head: siyahinin baslayigicina isare eden pointer
+ *
  */
 size_t list_len(const list_t *head)
 {
@@ -12,5 +14,5 @@ size_t list_len(const list_t *head)
 		count++;/*her bir node ucun say artiririq */
 		head = head->next;/* novbeti node kecirik */
 	}
-	return count;
+	return (count);
 }
