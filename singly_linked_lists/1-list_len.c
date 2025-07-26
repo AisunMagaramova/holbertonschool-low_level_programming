@@ -1,9 +1,10 @@
 #include <stddef.h>
 #include "lists.h"
 /**
- * list_len: linked list de nece duyun oldugunu sayir
- * @head: siyahinin baslayigicina isare eden pointer
- * return: siyahidaki nodelarin umumi sayi
+ * list_len: linked listdeki elementlerin sayini sayir
+ * @head: siyahinin ilk node nuna isare eden pointer
+ *
+ * return: siyahidaki node-larin sayi
  */
 size_t list_len(const list_t *head)
 {
