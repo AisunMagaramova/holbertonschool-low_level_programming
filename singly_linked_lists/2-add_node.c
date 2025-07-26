@@ -16,7 +16,7 @@ unsigned int _strlen(const char *s)
 	return (len);
 }
 /**
- * @add_node - siyahinin evveline yeni node elave edir
+ * add_node - siyahinin evveline yeni node elave edir
  * @head: siyahinin baslangicina isare eden pointerin unvani
  * @str: elave edilecek setrin sureti
  *
