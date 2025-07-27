@@ -43,14 +43,17 @@ int main(int argc, char *argv[])
 		print_error_and_exit(99, "Error: Can't write to %s\n", argv[2]);
 	}
 
-	while ((r_bytes = read(fd_from, buffer, BUFFER_SIZE)) != 0)
+	while (1)
 	{
+		r_bytes = read(fd_from, buffer, BUFFER_SIZE);
 		if (r_bytes == -1)
 		{
 			close(fd_from);
 			close(fd_to);
 			print_error_and_exit(98, "Error: Can't read from file %s\n", argv[1]);
 		}
+		if (r_bytes == 0)
+			break;
 
 		w_bytes = write(fd_to, buffer, r_bytes);
 		if (w_bytes == -1 || w_bytes != r_bytes)
