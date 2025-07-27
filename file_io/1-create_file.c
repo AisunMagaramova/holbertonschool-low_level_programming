@@ -5,7 +5,7 @@
 /**
  * create_file - Fayl yaradır e yaz
  * @filename: Yaradılacaq faylın
- * text_content: Fayla yazılacaq NULL-terminated wtn
+ * @text_content: Fayla yazılacaq NULL-terminated wtn
  *
  *  Return: 1 ugurlu olarsa, -1 gusuz olarsa
  */
