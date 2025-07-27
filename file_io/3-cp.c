@@ -9,7 +9,7 @@
  * print_error_and_exit - Yazilmis error mesaji ile cixis edir
  * @code: cixis codu
  * @msg: error mesaj
- * @arg: fayl adıe ya fd string
+ * @arg: fayl adÄ±e ya fd string
  */
 void print_error_and_exit(int code, const char *msg, const char *arg)
 {
@@ -17,8 +17,8 @@ void print_error_and_exit(int code, const char *msg, const char *arg)
 	exit(code);
 }
 /**
- * main - Faylı basqa fayla kopyal
- * @argc: arqument say�
+ * main - FaylÄ± basqa fayla kopyal
+ * @argc: arqument sayÄ
  * @argv: arqument massiv
  *
  * Return: 0
