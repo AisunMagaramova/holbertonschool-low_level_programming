@@ -7,26 +7,25 @@
  * @filename: oxunacaq faylın ad
  * @letters: oxunacaq simvol sayı
  *
- * Return: uğurlu olduqda oxunub yazılan simvol s
+ * Return: ugurlulu olduqda oxunub yazılan simvol s
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fd;
-	ssize_t r_bytes, w_bytes;
+	ssize_t fd, read_bytes, write_bytes;
 	char *buffer;
 
 	if (filename == NULL)
-		return 0;
+		return (0);
 
 	fd = open(filename, O_RDONLY);
 	if (fd == -1)
-		return 0;
+		return (0);
 
 	buffer = malloc(sizeof(char) * letters);
 	 if (!buffer)
 	 {
 		 close(fd);
-		 return 0;
+		 return (0);
 	 }
 
 	  r_bytes = read(fd, buffer, letters);
@@ -34,7 +33,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	  {
 		  free(buffer);
 		  close(fd);
-		  return 0;
+		  return (0);
 	  }
 
 	  w_bytes = write(STDOUT_FILENO, buffer, r_bytes);
@@ -42,7 +41,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	  {
 		  free(buffer);
 		  close(fd);
-		  return 0;
+		  return (0);
 	  }
 
 	  free(buffer);
